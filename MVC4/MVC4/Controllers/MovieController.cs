@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using MVC4.Models;
+using System.Net;
 
 namespace MVC4.Controllers
 {
@@ -16,16 +17,40 @@ namespace MVC4.Controllers
         //
         // GET: /Movie/
 
-        public ActionResult Index()
+        public ActionResult Index(string searchString,string movieGenre)
         {
-            return View(db.Movies.ToList());
+
+            var GenreList = new List<string>();
+            var GenreQry = from d in db.Movies
+                           orderby d.Genre
+                           select d.Genre;
+            GenreList.AddRange(GenreQry.Distinct());
+            ViewBag.movieGenre = new SelectList(GenreList);
+
+
+            var movies = from m in db.Movies
+                         select m;
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(s => s.Title.Contains(searchString));
+            }
+            if (!string.IsNullOrEmpty(movieGenre))
+            {
+                movies = movies.Where(x => x.Genre == movieGenre);
+            }
+
+            return View(movies);
         }
 
         //
         // GET: /Movie/Details/5
 
-        public ActionResult Details(int id = 0)
+        public ActionResult Details(int? id)
         {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
             Movie movie = db.Movies.Find(id);
             if (movie == null)
             {
@@ -77,7 +102,7 @@ namespace MVC4.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Movie movie)
+        public ActionResult Edit([Bind(Include="ID,Title,ReleaseDate,Genre,Price")] Movie movie)
         {
             if (ModelState.IsValid)
             {
