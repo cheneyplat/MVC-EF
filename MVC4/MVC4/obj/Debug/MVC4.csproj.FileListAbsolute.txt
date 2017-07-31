@@ -95,6 +95,7 @@ D:\Cheney\MVC+EF\MVC4\MVC4\bin\DotNetOpenAuth.OAuth.dll
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\DotNetOpenAuth.OpenId.dll
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\EntityFramework.dll
+D:\Cheney\MVC+EF\MVC4\MVC4\bin\EntityFramework.SqlServer.dll
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\Microsoft.Data.Edm.dll
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\Microsoft.Data.OData.dll
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\Microsoft.Web.Infrastructure.dll
@@ -117,6 +118,7 @@ D:\Cheney\MVC+EF\MVC4\MVC4\bin\WebGrease.dll
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\WebMatrix.Data.dll
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\WebMatrix.WebData.dll
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\EntityFramework.xml
+D:\Cheney\MVC+EF\MVC4\MVC4\bin\EntityFramework.SqlServer.xml
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\Newtonsoft.Json.xml
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\System.Net.Http.Formatting.xml
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\System.Web.Helpers.xml
@@ -168,8 +170,9 @@ D:\Cheney\MVC+EF\MVC4\MVC4\bin\ko\System.Spatial.resources.dll
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\ru\System.Spatial.resources.dll
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\zh-Hans\System.Spatial.resources.dll
 D:\Cheney\MVC+EF\MVC4\MVC4\bin\zh-Hant\System.Spatial.resources.dll
-D:\Cheney\MVC+EF\MVC4\MVC4\obj\Debug\MVC4.csprojResolveAssemblyReference.cache
+D:\Cheney\MVC+EF\MVC4\MVC4\obj\Debug\MVC4.Migrations.InitialCreate.resources
+D:\Cheney\MVC+EF\MVC4\MVC4\obj\Debug\MVC4.Migrations.Rating.resources
+D:\Cheney\MVC+EF\MVC4\MVC4\obj\Debug\MVC4.csproj.GenerateResource.Cache
 D:\Cheney\MVC+EF\MVC4\MVC4\obj\Debug\MVC4.dll
 D:\Cheney\MVC+EF\MVC4\MVC4\obj\Debug\MVC4.pdb
-D:\Cheney\MVC+EF\MVC4\MVC4\bin\EntityFramework.SqlServer.dll
-D:\Cheney\MVC+EF\MVC4\MVC4\bin\EntityFramework.SqlServer.xml
+D:\Cheney\MVC+EF\MVC4\MVC4\obj\Debug\MVC4.Migrations.DataAnnotations.resources
